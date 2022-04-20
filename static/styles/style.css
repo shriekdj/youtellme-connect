@@ -150,11 +150,6 @@ textarea.input {
 	color: #fff;
 }
 
-.aside, .footer {
-	width: 90%;
-	padding: 5%;
-}
-
 .aside .google-map-container {
 	width: 100%;
 }
@@ -183,11 +178,6 @@ textarea.input {
 	}
 	.google-map-container .google-map-embed {
 		height: 100%;
-	}
-
-	.aside, .footer {
-		width: 100%;
-		padding: 5%;
 	}
 
 }
