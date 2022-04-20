@@ -1,0 +1,242 @@
+:root {
+	--input-border: #8b8a8b;
+	--input-focus-h: 245;
+	--input-focus-s: 100%;
+	--input-focus-l: 42%;
+	font-family: sans-serif;
+}
+
+/* Reset Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+	background-color: rgb(255, 251, 251);
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+.heading-container, .heading-container:any-link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.wrapper {
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/* colors for background color of top bar */
+
+.wrapper {
+	background-color: #1b2032;
+	color: #fff;
+}
+
+.wrapper .header,
+.wrapper .nav-bar,
+.wrapper .nav-bar .nav-link {
+	height: 100%;
+}
+
+.wrapper .nav-bar .nav-link {
+	color: inherit;
+	text-decoration: none;
+	padding: 5px;
+	font-size: 1.25em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.heading {
+text-align: center;
+}
+
+.socials {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.socials .social-container {
+	color: inherit;
+
+}
+
+.socials .social-container {
+	padding: 2em auto;
+	margin: 5px auto;
+}
+
+/* Center Content Consisting Main and Aside Section */
+
+.form {
+	background-color:white;
+	padding: 10px;
+	border-bottom: 2px solid var(--input-border);
+}
+
+.input-container {
+	display: flex;
+	flex-direction: column;
+	padding: 1em;
+	margin: 0.5em;
+}
+
+.form-container h2,
+.form-container p {
+	text-align: center;
+}
+
+.input-container label,
+.input-container input {
+	font-size: large;
+}
+
+.input-container input,
+.input-container textarea {
+	border: solid #333 1px;
+}
+
+.input {
+	font-size: 16px;
+	font-family: inherit;
+	padding: 0.25em 0.5em;
+	background-color: #fff;
+	border: 2px solid var(--input-border);
+	border-radius: 4px;
+
+	/* animation */
+	transition: 180ms box-shadow ease-in-out;
+}
+
+.input:not(textarea) {
+	line-height: 0.75;
+	height: 2.25rem;
+}
+
+textarea.input {
+	resize: vertical;
+}
+
+.input:focus {
+	border-color: hsl(var(--input-focus-h), var(--input-focus-s), var(--input-focus-l));
+	box-shadow: 0 0 0 3px hsla(var(--input-focus-h), var(--input-focus-s), calc(var(--input-focus-l) +
+          40%), 0.8);
+	
+	/* outline added */
+	outline: 3px solid transparent;
+}
+
+.form .submit-btn-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form .submit-btn-container button {
+	background-color: royalblue;
+	padding: 10px;
+	font-size: 1em;
+	color: #fff;
+}
+
+.aside, .footer {
+	width: 90%;
+	padding: 5%;
+}
+
+.aside .google-map-container {
+	width: 100%;
+}
+
+.aside .google-map-container .google-map-embed {
+	width: 90%;
+	margin: 5%;
+	padding: 0px;
+}
+
+.aside .contact-details .contact-container a,
+.aside .contact-details .contact-container p {
+	text-decoration: inherit;
+}
+
+@media (min-width: 600px) {
+	.center-content {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.center-content .main .form {
+		border-bottom: none;
+	}
+	.google-map-container {
+		height: 50%;
+	}
+	.google-map-container .google-map-embed {
+		height: 100%;
+	}
+
+	.aside, .footer {
+		width: 100%;
+		padding: 5%;
+	}
+
+}
+
+.contact-container .contact-link:any-link {
+	color: #1c8488;
+}
+
+/* Site Details Section */
+
+.footer {
+	background-color: #1b2032;
+	color: #fff;
+}
+
+.footer .site-details .details-group ul > li {
+	line-height: 2em;
+	cursor: pointer;
+}
+
+.footer-link:any-link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.site-details {
+	border-bottom: 1px solid #8b8a8b;
+}
+
+
+@media (min-width: 600px) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer .site-details {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	
+	.footer .footer-end {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.footer .footer-end .socials .social-container {
+		padding: 20px;
+	}
+
+}
